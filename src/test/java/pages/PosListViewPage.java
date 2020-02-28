@@ -13,7 +13,10 @@ public class PosListViewPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "(//li[@class='active'])[2]")
+    @FindBy(xpath = "//span[contains(text(), 'Point of Sale')][1]")
+    public WebElement pos_module;
+
+    @FindBy(xpath = "//ol[@class = 'breadcrumb']/li")
     public WebElement head_of_the_page;
 
     @FindBy(xpath = "//button[@accesskey='c']") // IS IT RIGHT ONE BY GLEB
@@ -24,6 +27,9 @@ public class PosListViewPage {
 
     @FindBy(xpath = "//input[contains(@class, 'search')]")
     public WebElement searchField;
+
+    @FindBy(xpath = "//td[@class='o_data_cell o_required_modifier']")
+    public WebElement firstPosInList;
 
     @FindBy(xpath = "//button[contains(@class, 'previous')]")
     public WebElement leftArrow;
@@ -55,6 +61,9 @@ public class PosListViewPage {
     @FindBy (xpath = "(//span[contains(text(), 'Point of Sale')])[2]")
     public WebElement pos_link_from_left_menu;
 
+    @FindBy (xpath = "(//span[contains(text(), 'Products')])[3]")
+    public WebElement products_link_from_left_menu;
+
     @FindBy (xpath = "(//td[@class='o_list_record_selector'])[1]")
     public WebElement first_product_in_the_list;
 
@@ -73,5 +82,10 @@ public class PosListViewPage {
     @FindBy(xpath = "//a[contains(text(), 'Delete')]")
     public WebElement delete_from_dropdown_menu;
 
+    @FindBy(xpath = "//span[@class = 'o_pager_value']")
+    public WebElement page_value_button;
+
+    @FindBy(xpath = "//span[@class = 'o_pager_limit']")
+    public WebElement page_limit_button;
 
 }
