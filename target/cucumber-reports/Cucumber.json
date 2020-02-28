@@ -1,0 +1,514 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User already on Point of Sale",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12208605563,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged into Brite  ERP  as a manager",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_is_logged_into_Brite_ERP_as_a_manager()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2082686755,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User will click  POS header",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_header()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61831387,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User will click POS from Configuration",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_from_Configuration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4096116701,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click first check box from  POS name",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_click_first_check_box_from_POS_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3300134975,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User will click Edit button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_Edit_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "1 User loginned as a manager and User on the POS detail page in Editing mode",
+        "description": "",
+        "id": "checking-that-user-is-able-to-change-settings-in-tax-section-on-pos-details-page;1-user-loginned-as-a-manager-and-user-on-the-pos-detail-page-in-editing-mode",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 131524882,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify Taxes title on POS Editing page",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.verify_Taxes_title_on_POS_Editing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75340676,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Fiscal Position per Order  checkbox is  selected",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.fiscal_Position_per_Order_checkbox_is_selected()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49009953,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Dropdown under Fiscal position is displayed",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.dropdown_under_Fiscal_position_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41733287,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click Save button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.click_Save_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BB"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User already on Point of Sale",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9951072352,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged into Brite  ERP  as a manager",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_is_logged_into_Brite_ERP_as_a_manager()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2066697197,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User will click  POS header",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_header()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62875840,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User will click POS from Configuration",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_from_Configuration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3826294761,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click first check box from  POS name",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_click_first_check_box_from_POS_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3253467139,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User will click Edit button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_Edit_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "2 checking Fiscal Position per Order checkbox if it is selected",
+        "description": "",
+        "id": "checking-that-user-is-able-to-change-settings-in-tax-section-on-pos-details-page;2-checking-fiscal-position-per-order-checkbox-if-it-is-selected",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19632201,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Fiscal Position per Order  checkbox is not selected",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.fiscal_Position_per_Order_checkbox_is_not_selected()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18680536,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "dropdown for Fiscal per Order positions is not  displayed",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.dropdown_for_Fiscal_per_Order_positions_is_not_displayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2070528408,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks on Save button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_clicks_on_Save_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BB"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User already on Point of Sale",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9142041137,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged into Brite  ERP  as a manager",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_is_logged_into_Brite_ERP_as_a_manager()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2069150159,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User will click  POS header",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_header()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63226601,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User will click POS from Configuration",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_from_Configuration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3627051072,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click first check box from  POS name",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_click_first_check_box_from_POS_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3360271236,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User will click Edit button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_Edit_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "3 checking Fiscal Position  checkbox",
+        "description": "",
+        "id": "checking-that-user-is-able-to-change-settings-in-tax-section-on-pos-details-page;3-checking-fiscal-position--checkbox",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 76540995,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Fiscal Position  checkbox is selected",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.fiscal_Position_checkbox_is_selected()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30409230,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Dropdown under fiscal position is displayed",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.dropdown_under_fiscal_position_is_displayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2043551044,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click save button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.click_save_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BB"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User already on Point of Sale",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7013207085,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged into Brite  ERP  as a manager",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_is_logged_into_Brite_ERP_as_a_manager()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2080193033,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User will click  POS header",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_header()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62668663,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User will click POS from Configuration",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_POS_from_Configuration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8706213180,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click first check box from  POS name",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_click_first_check_box_from_POS_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3324261970,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User will click Edit button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.user_will_click_Edit_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "checking Fiscal Position  checkbox if it is not selected selected",
+        "description": "",
+        "id": "checking-that-user-is-able-to-change-settings-in-tax-section-on-pos-details-page;checking-fiscal-position--checkbox-if-it-is-not-selected-selected",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37840598,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Fiscal Position  checkbox is not selected",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.fiscal_Position_checkbox_is_not_selected()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24557376,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "dropdown for under Fiscal Position is not displayed",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.dropdown_for_under_Fiscal_Position_is_not_displayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2068526117,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "click save button",
+            "match": {
+              "location": "EditingPos_Tax_StepDef.click_save_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BB"
+          }
+        ]
+      }
+    ],
+    "name": "Checking that user is able to change settings in TAX section on POS Details page",
+    "description": "",
+    "id": "checking-that-user-is-able-to-change-settings-in-tax-section-on-pos-details-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/editingPos-Tax.feature",
+    "tags": [
+      {
+        "name": "@BB",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
