@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -24,6 +25,7 @@ public class LoginPage {
 
     @FindBy(xpath = "//button[.='Log in']")
     public WebElement buttonLogIn;
+
 
 
     public static void getToPOSModule() {
