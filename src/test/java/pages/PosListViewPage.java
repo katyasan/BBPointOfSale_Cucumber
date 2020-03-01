@@ -89,5 +89,8 @@ public class PosListViewPage {
         }
     }
     
+    @FindBy(xpath = "//td[@class='o_data_cell o_required_modifier']")
+    public WebElement firstPosInList;
+    
 
 }
