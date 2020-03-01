@@ -91,6 +91,8 @@ public class PosListViewPage {
     
     @FindBy(xpath = "//td[@class='o_data_cell o_required_modifier']")
     public WebElement firstPosInList;
+     @FindBy (xpath = "(//span[contains(text(), 'Products')])[3]")
+    public WebElement products_link_from_left_menu;
     
 
 }
