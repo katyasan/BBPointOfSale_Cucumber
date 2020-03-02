@@ -94,10 +94,5 @@ public class PosListViewPage {
      @FindBy (xpath = "(//span[contains(text(), 'Products')])[3]")
     public WebElement products_link_from_left_menu;
     
-    @FindBy(xpath = "//span[@class = 'o_pager_value']")
-    public WebElement page_value_button;
-
-    @FindBy(xpath = "//span[@class = 'o_pager_limit']")
-    public WebElement page_limit_button;
 
 }
