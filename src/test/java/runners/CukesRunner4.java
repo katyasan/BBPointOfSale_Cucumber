@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty","json:target/cucumber-reports/Cucumber.json"},
-        features = "src/test/resources/features",
+        plugin = {"html:target/default-cucumber-reports","json:target/parallel-Cucumber4.json"},
+        features = "src/test/resources/features/editingPos-Order.feature",
         glue = "step_definition",
-        dryRun = false,
+//        dryRun = false,
         tags = ""
 
 )
@@ -20,5 +20,5 @@ import org.junit.runner.RunWith;
 
 
 
-public class CukesRunner {
+public class CukesRunner4 {
 }
