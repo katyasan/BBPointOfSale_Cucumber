@@ -3,6 +3,7 @@ package step_definition;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.eo.Se;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -24,18 +25,19 @@ public class EditingPos_Tax_StepDef {
     WebDriver driver;
 
 
-    @Given("User is logged into Brite  ERP  as a manager and on POS page")
-    public void user_is_logged_into_Brite_ERP_as_a_manager_and_on_POS_page() {
-       Driver.getDriver().get("http://app2.briteerp.com/web/login");
-       loginPage.userNameInput.sendKeys("in_pos_manager7@info.com");
-       loginPage.passwordInput.sendKeys("KjKtfgrs36");
-       loginPage.buttonLogIn.click();
+    @Given("User is logged into Brite  ERP  as a manager")
+    public void user_is_logged_into_Brite_ERP_as_a_manager() {
+        Driver.getDriver().get("http://app2.briteerp.com/web/login");
+        loginPage.userNameInput.sendKeys("in_pos_manager7@info.com");
+        loginPage.passwordInput.sendKeys("KjKtfgrs36");
+        loginPage.buttonLogIn.click();
 
-       SeleniumUtils.pause(5);
-
+        SeleniumUtils.pause(5);
 
 
     }
+
+
 
     @Given("User will click  POS header")
     public void user_will_click_POS_header() {
@@ -60,6 +62,11 @@ public class EditingPos_Tax_StepDef {
         posTaxPage.editButton.click();
         SeleniumUtils.pause(3);
     }
+    @Then("scroll down to Taxes")
+    public void scroll_down_to_Taxes() {
+        SeleniumUtils.scrollToElement(Driver.getDriver(),posDetailPage.taxesTitle);
+    }
+
 
     @Given("Verify Taxes title on POS Editing page")
     public void verify_Taxes_title_on_POS_Editing_page() {
@@ -148,8 +155,9 @@ public class EditingPos_Tax_StepDef {
         @When("dropdown for under Fiscal Position is not displayed")
         public void dropdown_for_under_Fiscal_Position_is_not_displayed () {
             Assert.assertTrue("dropdown for under fiscal position is not  displayed", posDetailPage.fiscalPositionCheckBox.isDisplayed());
-        }
 
+
+        }
 
 
 }
