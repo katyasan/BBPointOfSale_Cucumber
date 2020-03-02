@@ -7,7 +7,7 @@ And User will click POS from Configuration
 Then User click first check box from  POS name
 Then User will click Edit button
 
-Scenario:1 User loginned as a manager and User on the POS detail page in Editing mode
+Scenario:1 User logined as a manager and User on the POS detail page in Editing mode
 Given Verify Taxes title on POS Editing page
 When Fiscal Position per Order  checkbox is  selected
 And Dropdown under Fiscal position is displayed
