@@ -14,7 +14,8 @@ public class PosDetailPage {
 
     @FindBy(xpath = "//button[@accesskey='s']")
     public WebElement saveButton;
-    @FindBy(xpath = "(//table//tbody//td[@class='o_data_cell o_required_modifier'])[1]")
+    @FindBy(xpath = "(/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/div[2]/button[1]")
+
     public WebElement asdButton;
 
 
@@ -113,7 +114,7 @@ public class PosDetailPage {
     public WebElement underOrderInterfaceIpEmptyBox;
 
     //Under PoS Box checkBox, inside Checkboxes:
-    @FindBy(xpath = "(//input[@type='checkbox'])[12]")          // Adress Barcode Scanner checkBox
+    @FindBy(xpath = "(//input[@type='checkbox'])[17]")          // Adress Barcode Scanner checkBox
     public WebElement underOrderInterfaceIPAddressBarcodeScannerCheckBox;
 
     //Under PoS Box checkBox, inside Checkboxes:
@@ -133,11 +134,14 @@ public class PosDetailPage {
     public WebElement underOrderInterfaceCustomerDisplayCheckBox;
 
 
-    @FindBy(xpath = "(//input[@type='checkbox'])[17]")              //Barcode Scanner
-    public WebElement barcodeScannerCheckBox;
+   @FindBy(xpath = "(//input[@type='checkbox'])[17]")              //Barcode Scanner
+   public WebElement barcodeScannerCheckBox;
+
+
+
 
     //Under Barcode Scanner there is a dropDown
-    @FindBy(xpath = "(//input[@class='o_input ui-autocomplete-input'])[5]")         //DefaultNomenclatureDropdown
+    @FindBy(xpath = "(//input[contains(@id, 'o_field_input')])[24]")         //DefaultNomenclatureDropdown
     public WebElement underBarcodeScannerDefaultNomenclatureDropdown;
 
 
