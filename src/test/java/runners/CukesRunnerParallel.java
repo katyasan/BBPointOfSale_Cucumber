@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
         plugin = {"pretty","json:target/cucumber-reports/Cucumber.json"},
         features = "src/test/resources/features",
         glue = "step_definition",
-        dryRun = false,
-        tags = "@testAll"
+        dryRun = true,
+        tags = "@cucumber"
 )
 
-public class CukesRunner {
+public class CukesRunnerParallel {
 }

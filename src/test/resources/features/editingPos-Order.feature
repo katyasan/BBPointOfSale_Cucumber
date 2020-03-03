@@ -4,7 +4,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And User navigates to Editing mode
 
     # Table management 1
-  @scen1
+  @Regression @Smoke
   Scenario: checking Table Management functionality when it is unselected
     Given Is a Bar Restaurant checkbox in selected and Table Management checkbox is unselected
     When User selects Table Management checkbox
@@ -14,6 +14,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
    # Table management 2
+  @Regression @Smoke
   Scenario: checking Table Management functionality when it is selected
     Given Is a Bar Restaurant checkbox in selected and Table Management checkbox is selected
     When User unselects Table Management checkbox
@@ -24,6 +25,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
   # Orderline Notes 1
+  @Regression
   Scenario: checking Orderline Notes functionality when it is unselected
     Given Is a Bar Restaurant checkbox in selected and Orderline Notes checkbox is unselected
     When User selects Orderline Notes checkbox
@@ -32,6 +34,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
   # Orderline Notes 2
+
   Scenario: checking Orderline Notes functionality when it is selected
     Given Is a Bar Restaurant checkbox in selected and Orderline Notes checkbox is selected
     When User unselects Orderline Notes checkbox
@@ -40,6 +43,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
     # Category Pictures 1
+  @Regression
   Scenario: checking Category Pictures functionality when it is not selected
     Given Category Pictures checkbox is not selected
     When User selects Category Pictures checkbox
@@ -48,6 +52,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
     # Category Pictures 2
+
   Scenario: checking Category Pictures functionality when it is selected
     Given Category Pictures checkbox is  selected
     When User unselects Category Pictures checkbox
@@ -56,6 +61,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
     # Virtual keyboard 1
+  @Regression
   Scenario: checking Virtual KeyBoard functionality when it is not selected
     Given Virtual KeyBoard checkbox is not selected
     When User selects Virtual KeyBoard checkbox
@@ -64,6 +70,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
     # Virtual keyboard 2
+
   Scenario: checking Category Pictures functionality when it is selected
     Given Virtual KeyBoard checkbox is  selected
     When User unselects Category Pictures checkbox
@@ -73,6 +80,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
 
 
     # Large Scrollbars 1
+  @Regression
   Scenario: checking Large Scrollbars functionality when it is not selected
     Given Large Scrollbars checkbox is not selected
     When User selects Large Scrollbars checkbox
@@ -81,6 +89,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
     And close the browser
 
     # Large Scrollbars 2
+
   Scenario: checking Large Scrollbars functionality when it is selected
     Given Large Scrollbars checkbox is  selected
     When User unselects Large Scrollbars checkbox
@@ -90,6 +99,7 @@ Feature: Checking that user is able to change settings in Order Interface sectio
 
 
      # Set Start Category 1
+
   Scenario: checking Set Start Category functionality when it is not selected
     Given Set Start Category checkbox is not selected
     When User selects Set Start Category checkbox

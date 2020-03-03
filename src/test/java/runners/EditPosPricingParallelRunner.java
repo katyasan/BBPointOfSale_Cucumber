@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/default-cucumber-reports","json:target/parallel-cucumber7.json"},
         features = "src/test/resources/features/editingPos-Pricing.feature",
         glue = "step_definition"
+//        tags = "@cucumber"
 
 
 )

@@ -6,6 +6,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.Config;
 import utilities.Driver;
 import utilities.SeleniumUtils;
@@ -43,8 +45,10 @@ public class LoginPage {
         }
 
         String posModule = "//span[contains(text(), 'Point of Sale')][1]";
-
-        Driver.getDriver().findElement(By.xpath(posModule)).click();
+        WebElement pos = Driver.getDriver().findElement(By.xpath(posModule));
+        WebDriverWait wait = new WebDriverWait (Driver.getDriver(), 5);
+        wait.until(ExpectedConditions.elementToBeClickable(pos));
+        pos.click();
     }
 
 

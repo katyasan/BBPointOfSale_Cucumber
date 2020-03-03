@@ -1,12 +1,14 @@
-@BB
+
 Feature: Checking that user is able to change settings in TAX section on POS Details page
-Background: User already on Point of Sale
-Given User is logged into Brite  ERP  as a manager
+
+  Background: User already on Point of Sale
+Given User is logged into Brite  ERP  as a manager and on POS page
 And User will click  POS header
 And User will click POS from Configuration
 Then User click first check box from  POS name
 Then User will click Edit button
 
+    @Smoke
 Scenario:1 User logined as a manager and User on the POS detail page in Editing mode
 Given Verify Taxes title on POS Editing page
 When Fiscal Position per Order  checkbox is  selected

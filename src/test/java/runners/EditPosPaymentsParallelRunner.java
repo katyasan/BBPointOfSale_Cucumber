@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/default-cucumber-reports","json:target/parallel-cucumber5.json"},
         features = "src/test/resources/features/editingPos-Payments.feature",
-        glue = "step_definition"
+        glue = "step_definition",
+        tags = "@cucumber",
+        dryRun= true
 
 
 )
