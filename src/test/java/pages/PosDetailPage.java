@@ -193,6 +193,16 @@ public class PosDetailPage {
     //--------------------------------------------------------------------------------------------------------------
 
     //PRICING
+    @FindBy(xpath = "//button[@accesskey='c']")
+
+    public WebElement createBtn;
+
+    @FindBy(xpath = "(//span[@class='oe_menu_text'])[2]")
+    public WebElement pointOfSale;
+
+    @FindBy(xpath = "(//span[@class='oe_menu_text'])[3]")
+    public WebElement poinOFSaleInList;
+
     @FindBy(xpath = "(//td[@class='o_data_cell o_required_modifier'])[2]")
     public WebElement phone;
 

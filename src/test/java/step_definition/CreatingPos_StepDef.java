@@ -12,7 +12,6 @@ import utilities.Driver;
 import utilities.SeleniumUtils;
 
 public class CreatingPos_StepDef {
-
     PosCardsViewPage posCV = new PosCardsViewPage();
     PosListViewPage posLV = new PosListViewPage();
     PosCreatePage posCreatePage = new PosCreatePage();
@@ -22,7 +21,7 @@ public class CreatingPos_StepDef {
 
     @Given("User is logged into Brite ERP as a sales manager and on POS page")
     public void user_is_logged_into_Brite_ERP_as_a_sales_manager_and_on_POS_page() {
-       LoginPage.getToPOSModule();
+        LoginPage.getToPOSModule();
     }
 
     @Given("User click on list view icon")
@@ -126,8 +125,8 @@ public class CreatingPos_StepDef {
 
     @Then("Edit button should appear")
     public void edit_button_should_appear() {
-      SeleniumUtils.waitForVisibility(posDetailPage.editButton,10);
-      Assert.assertTrue("Edit button is not displayed",posDetailPage.editButton.isDisplayed());
+        SeleniumUtils.waitForVisibility(posDetailPage.editButton,10);
+        Assert.assertTrue("Edit button is not displayed",posDetailPage.editButton.isDisplayed());
     }
 
     @When("user type name of recently created POS into search box and click enter")
@@ -142,6 +141,8 @@ public class CreatingPos_StepDef {
         String actualName = posLV.firstPosInList.getText();
         Assert.assertTrue("POS names mismatch",actualName.contains(Config.getProperty("nameNewPos")));
     }
+
+
 
 
 
