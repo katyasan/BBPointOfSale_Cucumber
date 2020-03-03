@@ -10,6 +10,8 @@ import java.util.List;
 
 public class PosCardsViewPage {
 
+    public static Driver Driver;
+
     public PosCardsViewPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

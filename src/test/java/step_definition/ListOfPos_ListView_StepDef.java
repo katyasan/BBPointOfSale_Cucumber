@@ -51,10 +51,10 @@ posListViewPage.listButton.click();
 //
 //        Assert.assertTrue("Products Title verification FAILED!", actualHead.contains("Products"));
 
-        seleniumUtils.waitForClickability(posListViewPage.listButton, 10);
+        seleniumUtils.waitForClickability(posListViewPage.listButton, 20);
         posListViewPage.listButton.click();
 
-        seleniumUtils.waitForVisibility(posListViewPage.selectAllCheckBox, 10);
+        seleniumUtils.waitForVisibility(posListViewPage.selectAllCheckBox, 20);
   Assert.assertTrue("List of Products are not displayed in List view mode. Verification FAILED!",
           posListViewPage.selectAllCheckBox.isDisplayed());
     }
