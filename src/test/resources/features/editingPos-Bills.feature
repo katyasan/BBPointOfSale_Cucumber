@@ -7,7 +7,7 @@ Feature: Validating Bill&Receipts section on PosDetail page
     And Change view and choose first point of sale and went to edit mode
 
 
-    @Test
+  @Smoke @Regression
   Scenario: Checkbox bar is not specified, select all checkboxes Bill&Receipts section
     Given Checkbox is Bar is not specified
     When I scroll down to Bill&Receipts section
@@ -17,7 +17,7 @@ Feature: Validating Bill&Receipts section on PosDetail page
     And I click to Save button
     Then I verify what selected checkboxes is saved and selected , checkbox is bar is not specified
 
-      @Test2
+   @Regression
   Scenario: Checkbox bar is not specified, Unselect all checkboxes Bill&Receipts section
     Given Checkbox is Bar is not specified
     When I scroll down to Bill&Receipts section
@@ -27,7 +27,7 @@ Feature: Validating Bill&Receipts section on PosDetail page
     And I click to Save button
     Then I verify what unselected checkboxes is saved and unselected , checkbox is bar is not specified
 
-      @Test3
+   @Regression @Smoke
   Scenario: Checkbox bar is specified, Select all checkboxes Bill&Receipts section
     Given Checkbox is Bar is specified
     When I scroll down to Bill&Receipts section
@@ -40,7 +40,7 @@ Feature: Validating Bill&Receipts section on PosDetail page
     And I click to Save button
     Then I verify what selected checkboxes is saved and selected, checkbox is bar is specified
 
-        @Test4
+   @Regression
   Scenario: Checkbox bar is not specified, write text to Header & Footer and verify after save
     Given Checkbox is Bar is not specified
     When I scroll down to Bill&Receipts section

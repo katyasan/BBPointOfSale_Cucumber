@@ -8,8 +8,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/default-cucumber-reports","json:target/parallel-cucumber4.json"},
-        features = "src/test/resources/features/editingPos-Order.feature",
+        features = "src/test/resources/features/2_BB-384.feature",
         glue = "step_definition"
+//        tags = "@cucumber"
 
 
 )
